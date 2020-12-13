@@ -1,1 +1,1 @@
-A custom image of (PhasecoreX's Red-DiscordBot docker image)[https://github.com/PhasecoreX/docker-red-discordbot] based on full tag
+A custom image of [PhasecoreX's Red-DiscordBot docker image](https://github.com/PhasecoreX/docker-red-discordbot) based on full tag
