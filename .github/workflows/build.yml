@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TITLE: Red-DiscordBot
-      GHCR_SLUG: ghcr.io/Lifeismana/docker-red-discordbot
+      GHCR_SLUG: ghcr.io/lifeismana/docker-red-discordbot
     steps:
       -
         name: Checkout
