@@ -5,6 +5,6 @@ RUN apt-get update; \
         dirmngr \
         curl \
     ; \
-    curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash;\
+    curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash;\
     apt-get install speedtest; \
     rm -rf /var/lib/apt/lists/*;
