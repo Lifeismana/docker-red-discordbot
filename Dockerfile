@@ -2,13 +2,9 @@ FROM phasecorex/red-discordbot:full as latest
 
 RUN apt-get update; \
     apt-get install -y --no-install-recommends \
-        gnupg1 \
-        apt-transport-https \
         dirmngr \
+        ca-certificates \
     ; \
-    export INSTALL_KEY=379CE192D401AB61 ; \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY ;\
-    echo "deb https://ookla.bintray.com/debian generic main" | tee  /etc/apt/sources.list.d/speedtest.list ;\
-    apt-get update ;\
+    curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash;\
     apt-get install speedtest; \
     rm -rf /var/lib/apt/lists/*;
