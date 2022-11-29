@@ -2,6 +2,8 @@ FROM ghcr.io/lifeismana/red-discordbot:full as latest
 
 RUN apt-get update; \
     apt-get install -y --no-install-recommends \
+        libaio1 \
+        libaio-dev \
         dirmngr \
         curl \
     ; \
