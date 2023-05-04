@@ -1,4 +1,4 @@
-FROM ghcr.io/lifeismana/red-discordbot:full as latest
+FROM phasecorex/red-discordbot:full as latest
 
 RUN apt-get update; \
     apt-get install -y --no-install-recommends \
